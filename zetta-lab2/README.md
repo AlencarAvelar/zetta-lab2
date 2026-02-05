@@ -1,12 +1,9 @@
 # 🎯 DESAFIO II - Ciência e Governança de Dados
 ## Modelagem Preditiva do IDHM e Recomendações Estratégicas (Gradient Boosting)
 
-[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
-[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3+-orange.svg)](https://scikit-learn.org/)
-[![Pandas](https://img.shields.io/badge/pandas-2.0+-green.svg)](https://pandas.pydata.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
+
+
 
 ## 📋 Índice
 
@@ -42,34 +39,32 @@ Este projeto tem como objetivo desenvolver modelos preditivos para avaliar o **�
 
 ```
 zetta-lab2/
-│
-├── data/
-│   └── refined/
-│       └── base_udh_refined.csv          # Dataset processado (1228 obs, 13 vars)
-│
-├── notebooks/
-│   ├── eda_outliers_nulos.ipynb          # Análise Exploratória de Dados
-│   ├── etl_refined.ipynb                 # ETL e Preparação dos Dados
-│   └── model.ipynb                       # Modelagem Gradient Boosting + SHAP
-│
-├── scripts/
-│   ├── model_comparison.py               # Comparação de múltiplos modelos
-│   └── toCSV.py                          # Utilitário de conversão
-│
-├── outputs/
-│   ├── boxplot_outliers.jpg              # Análise de outliers
-│   ├── shap_summary.jpg                  # SHAP Summary Plot (GB)
-│   ├── shap_local_explanation.jpg        # Explicação SHAP local (GB)
-│   ├── shap_importance_results.csv       # Importância das features (GB)
-│   ├── model_comparison_results.csv      # Resultados comparativos
-│   ├── model_comparison_metrics.jpg      # Visualizações comparativas
-│   └── model_r2_train_vs_test.jpg        # Análise de generalização
-│
 ├── dashboard/
-│   └── app.py                            # Dashboard interativo (Streamlit/Plotly)
-│
-├── README.md                             # Este arquivo
-└── requirements.txt                      # Dependências do projeto
+│   └── app.py                # Interface visual para exibição dos resultados
+├── data/
+│   ├── raw/                  # Dados originais (sem tratamento)
+│   │   ├── dados_bh.csv
+│   │   └── dados_bh.xls
+│   └── refined/              # Dados processados e prontos para modelagem
+│       ├── base_udh_refined.csv
+│       └── A - DICIONÁRIO dos indicadore...
+├── notebooks/                # Experimentos e análises exploratórias
+│   ├── eda_outliers_nulos.ipynb
+│   ├── etl_refined.ipynb
+│   └── model.ipynb
+├── outputs/                  # Exportação de gráficos e métricas do modelo
+│   ├── boxplot_outliers.png
+│   ├── model_comparison_metrics.png
+│   ├── model_comparison_results.csv
+│   ├── model_r2_train_vs_test.png
+│   ├── shap_importance_results.csv
+│   ├── shap_local_explanation.png
+│   └── shap_summary.png
+├── scripts/                  # Scripts de automação (.py)
+│   ├── model_comparison.py
+│   └── toCSV.py
+├── README.md                 # Documentação principal
+└── requirements.txt          # Lista de bibliotecas para instalação
 ```
 
 ---
